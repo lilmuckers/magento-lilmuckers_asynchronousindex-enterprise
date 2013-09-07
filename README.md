@@ -2,7 +2,7 @@
 
 Extension for **Magento Enterprise 1.13** to plug into the default Indexing functionality.
 
-This module is aimed at **Enterprise** users who are looking for a quick way to attempt to increase the performance of their backend interface. It achieves this by forking the processing of the *update on save* events off to an external worker running on **breanstalkd** (or a similar queueing system supported by (Lilmuckers_Queue) [https://github.com/lilmuckers/magento-lilmuckers_queue]).
+This module is aimed at **Enterprise** users who are looking for a quick way to attempt to increase the performance of their backend interface. It achieves this by forking the processing of the *update on save* events off to an external worker running on **breanstalkd** (or a similar queueing system supported by [Lilmuckers_Queue] (https://github.com/lilmuckers/magento-lilmuckers_queue]).
 
 This is no-where near a magic bullet solution, and should be used in conjunction with other optimisations to achieve the desired level of performance, it's merely a single bullet in the bandolier.
 
@@ -12,7 +12,7 @@ If your site is a lot simpler (only contained a few store views and/or products)
 
 ## Requirements
  * Magento Enterprise 1.13 or higher
- * (Lilmuckers_Queue) [https://github.com/lilmuckers/magento-lilmuckers_queue] v0.2.2 or better
+ * [Lilmuckers_Queue] (https://github.com/lilmuckers/magento-lilmuckers_queue) v0.2.2 or better
  
 ## Configuration
  * Enable the module under **System > Configuration > Index Management > Index Options**
