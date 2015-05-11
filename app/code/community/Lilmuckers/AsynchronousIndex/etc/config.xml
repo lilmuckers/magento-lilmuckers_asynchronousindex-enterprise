@@ -32,12 +32,6 @@
             </lilasyncindex>
         </models>
         
-        <models>
-            <lilasyncindex>
-                <class>Lilmuckers_AsynchronousIndex_Model</class>
-            </lilasyncindex>
-        </models>
-        
         <helpers>
             <lilasyncindex>
                 <class>Lilmuckers_AsynchronousIndex_Helper</class>
