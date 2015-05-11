@@ -30,6 +30,11 @@ class Lilmuckers_AsynchronousIndex_Helper_Data extends Mage_Core_Helper_Abstract
     const ASYNC_QUEUE = 'asyncindex';
     
     /**
+     * The delay time to put on the index worker
+     */
+    const ASYNC_DELAY = 5;
+    
+    /**
      * Return a flag for when we're using an asyncronous index
      * 
      * @return bool
@@ -69,6 +74,9 @@ class Lilmuckers_AsynchronousIndex_Helper_Data extends Mage_Core_Helper_Abstract
             $data,
             $storeId
         );
+        
+        //set a delay on the task
+        $_task->setDelay(self::ASYNC_DELAY);
         
         //send to the queue
         $_queue->addTask($_task);
